@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Script Demo 
+    </h1>
+
+    <script type="text/javascript">
+        var counter=0;
+        document.write("While loop");
+        while(counter<5){
+            if(counter ==3){
+                counter ++;
+                continue
+            }
+            if(counter == 4){
+                break;
+            }
+            document.write("current counter value is: " + counter);
+            document.write("<br>");
+            counter++;
+        }
+        document.write("End of the while loop" + counter);
+
+    </script>
+</body>
+</html>
