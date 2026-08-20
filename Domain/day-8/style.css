@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background: #f2f4f7;
+
+    padding: 40px 20px;
+}
+
+
+/* Main container */
+
+.container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+h1 {
+    margin-bottom: 25px;
+
+    font-size: 36px;
+
+    color: #222;
+}
+
+
+/* Button */
+
+#loadBtn {
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#loadBtn:hover {
+    background: #444;
+
+    transform: translateY(-2px);
+}
+
+
+/* Gallery */
+
+#gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+
+/* Image card */
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Image */
+
+.card img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Photographer information */
+
+.card-info {
+    padding: 15px;
+
+    text-align: left;
+}
+
+
+.card-info p {
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 20px;
+}
+
+
+.card-info a {
+    color: #222;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.card-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* Loading message */
+
+.loading {
+    grid-column: 1 / -1;
+
+    font-size: 18px;
+
+    color: #666;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+}
+
