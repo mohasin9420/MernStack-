@@ -1,0 +1,13 @@
+{
+    "name" :"nodeexample",
+    "version":"1.0.0",
+    "lockfileversion":3,
+    "requires":true,
+    "package":{
+        "":{
+            "name":"nodeexample",
+            "version":"1.0.0"
+        }
+    }
+
+}
